@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href=".temple.css" rel="stylesheet">
+    <script src="temple.js"></script>
+</head> 
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Temples Tourism</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto" style="padding: 5px;">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <button type="button" id="mybutton" onClick="changestyle()" class="btn btn-primary">Light</button>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row" style="display: flex; align-content: center;">
+            <div class="col-md-12">
+                <h3 id="h"
+                    style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ; text-decoration: wavy; padding: 20px;">
+                    HOME</h3>
+            </div>
+        </div>
+        <div class="row" style="display: flex; align-content: center;">
+            <div class="col-md-6">
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" >
+                                Kadri Manjunath Temple
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="acc-dark1">
+                                <strong>Kadri Manjunath Temple - </strong> Kadri Manjunatha Temple is a historic temple
+                                in Mangalore in the state of Karnataka, India. The incharge and priests in the temple
+                                are Shivalli Madhva Brahmins.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Chamundeshwari Temple
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="acc-dark2">
+                                <strong>Chamundeshwari Temple - </strong> The Chamundeshwari Temple is a Hindu temple
+                                located on the top of Chamundi Hills about 13 km from the palace city of Mysuru in the
+                                state of Karnataka in India. The temple was named after Chamundeshwari or, the fierce
+                                form of Shakti, a tutelary deity held in reverence for centuries by the Maharaja of
+                                Mysuru.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" >
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Kukke Subramanya Temple
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body" id="acc-dark3">
+                                <strong>Kukke Subramanya Temple - </strong> Kukke Subramanya (IAST: Kukke Subrahmaṇya)
+                                is a Hindu temple located in the village Subramanya, of Kadaba taluk (Earlier in Sullia
+                                taluk) in Dakshina Kannada district, Karnataka, India. In this temple Kartikeya is
+                                worshipped as Subramanya, lord of all serpents. The epics relate that the divine serpent
+                                Vasuki and other serpents found refuge under Subramanya when threatened by the Garuda.
+                                The priests in the temple are Shivalli Madhwa Brahmins. The poojas and other daily
+                                rituals in the temple are performed as per Madhvacharya's Tantra Sara Sangraha.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img id="c1" src="./images/kadri.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="c2" src="./images/chamundeshwari.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img id="c3" src="./images/subrahmanya.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="display: flex; align-content: center;margin:20 30 20 30;padding: 20 20 20 20; " class="dark">
+            <div class="col-md-4" style="justify-self: center;padding: 40px;">
+                <div class="card" style="width: 25rem;align-items: center;height: 550px;" >
+                    <img id="card1" src="./images/ranganathaswamy.jpg" class="card-img-top" alt="...">
+                    <h5>Ranganathaswamy Temple</h5>
+                    <div class="card-body">
+                        <p class="card-text">The Ranganathaswamy temple or Sri Ranganathaswamy temple in Srirangapatna,
+                            in the Mandya district of Karnataka state, India, is dedicated to the Hindu god Ranganatha
+                            (a manifestation of Vishnu).</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="justify-self: center;padding: 40px;">
+                <div class="card" style="width: 25rem;align-items: center;height: 550px;" >
+                    <img id="card1" src="./images/mangaladevi.jpg" class="card-img-top" alt="...">
+                    <h5>Mangaladevi Temple</h5>
+                    <div class="card-body">
+                        <p class="card-text">The Mangaladevi Temple is a Hindu temple at Bolara in the city of Mangalore
+                            in the Indian state of Karnataka. It is situated about three kilometres southwest of the
+                            city centre.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="justify-self: center;padding: 40px;">
+                <div class="card" style="width: 25rem;align-items: center;height: 550px;">
+                    <img id="card2" src="./images/kudroli.jpg" class="card-img-top" alt="...">
+                    <h5>Gokarnanatheshwara Temple</h5>
+                    <div class="card-body">
+                        <p class="card-text">The Gokarnanatheshwara Temple, otherwise known as Kudroli Sri Gokarnanatha
+                            Kshetra, is in the Kudroli area of Mangalore in Karnataka, India. It was consecrated by
+                            Narayana Guru. It is dedicated to Gokarnanatha, a form of Lord Shiva.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
